@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="42" placeholderIntrinsicHeight="21" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVV-Ox-Ap1">
+                                <rect key="frame" x="279" y="129" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yu5-8c-zR2">
+                                <rect key="frame" x="200" y="200" width="200" height="200"/>
+                                <color key="backgroundColor" red="0.4538920074182019" green="0.65629441618288631" blue="0.35330131888289951" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="aAX-h4-UNo"/>
+                                    <constraint firstAttribute="height" constant="200" id="wKq-rM-kMR"/>
+                                </constraints>
+                                <state key="normal" title="开始通知"/>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressSchdeule:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kIg-Rb-vBZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GVV-Ox-Ap1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="34n-Iy-22d"/>
+                            <constraint firstItem="yu5-8c-zR2" firstAttribute="top" secondItem="GVV-Ox-Ap1" secondAttribute="bottom" constant="50" id="8RP-3R-Uee"/>
+                            <constraint firstItem="GVV-Ox-Ap1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Dgw-rM-trP"/>
+                            <constraint firstItem="yu5-8c-zR2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="QJO-Yu-sEN"/>
+                            <constraint firstItem="yu5-8c-zR2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dZC-6N-pvT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dgw-rM-trP"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="rspLabel" destination="GVV-Ox-Ap1" id="KEA-h9-nkm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="228" y="416"/>
+        </scene>
+    </scenes>
+</document>
